@@ -2,22 +2,32 @@
   "name": "fofa-js",
   "version": "2.0.3",
   "description": "JavaScript library for FOFA (https://fofa.info)",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "FOFA",
+    "CTF"
+  ],
+  "author": "Eric Moore <eric.gitta.moore@outlook.com>",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
+    "commitlint": "^19.2.1",
     "eslint": "^9.0.0",
+    "husky": "^9.0.11",
     "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "rollup": "^4.14.1",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
