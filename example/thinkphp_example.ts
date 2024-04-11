@@ -1,5 +1,5 @@
-import { Client } from "../src";
 import * as process from "node:process";
+import { Client } from "../src";
 
 async function main() {
   const key = process.env.FOFA_KEY || "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; // 输入key

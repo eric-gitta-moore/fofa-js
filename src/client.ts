@@ -1,5 +1,6 @@
-import axios, { AxiosInstance, AxiosProxyConfig } from "axios";
 import * as process from "node:process";
+import axios from "axios";
+import type { AxiosInstance, AxiosProxyConfig } from "axios";
 
 interface SearchOptions {
   page?: string | number;
@@ -23,7 +24,7 @@ class Client {
     retryBackoff: 2,
   };
 
-  constructor(key: string = "", baseUrl?: string, proxies?: AxiosProxyConfig) {
+  constructor(key = "", baseUrl?: string, proxies?: AxiosProxyConfig) {
     this.key = key || process.env.FOFA_KEY || "";
     this.baseUrl = baseUrl || process.env.FOFA_BASE_URL || "https://fofa.info";
     this.lang = this.getLanguage();
@@ -79,7 +80,7 @@ class Client {
 
   async searchNext(
     queryStr: string,
-    options: SearchOptions = {},
+    options: SearchOptions = {}
   ): Promise<any> {
     const params: SearchOptions = {
       ...options,
@@ -96,7 +97,7 @@ class Client {
 
   async searchStats(
     queryStr: string,
-    options: SearchOptions = {},
+    options: SearchOptions = {}
   ): Promise<any> {
     const params: SearchOptions = {
       ...options,
@@ -113,8 +114,8 @@ class Client {
 
   async searchHost(
     host: string,
-    detail: boolean = false,
-    opts: SearchOptions = {},
+    detail = false,
+    opts: SearchOptions = {}
   ): Promise<any> {
     const params: SearchOptions = {
       ...opts,
