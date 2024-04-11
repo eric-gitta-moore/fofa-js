@@ -1,15 +1,15 @@
-# FOFA JavaScript SDK Documentation
+# FOFA SDK 使用说明
 
-An easy-to-use wrapper for <a href="https://fofa.info/api"><font face="menlo">FOFA API</font></a> written in ts.
+基于 [`FOFA API`](https://fofa.info/api) 编写的 `JavaScript` 版 `SDK`, 方便 `js/ts` 开发者快速将 `FOFA` 集成到自己的项目中。
 
-FOFA is a search engine for Internet-connected devices. `FOFA API` helps developers integrate FOFA data easily in their own projects.
+`FOFA` 是一个针对联网设备的搜索引擎。`FOFA API` 可帮助开发人员在自己的项目中轻松集成 `FOFA` 数据。
 
 ## Documentaion
 - <a href="README.md"> Documentation </a>
 - <a href="README_CN.md"> 中文文档 </a>
 - [Api Documentation](https://fofapro.github.io/fofa-py/index.html)
 
-## Usage
+## 使用
 ```ts
 import { Client } from "fofa-js";
 import process from "node:process";
